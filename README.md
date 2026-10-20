@@ -31,7 +31,25 @@ This makes it especially useful for games that benefit from a more raw, old-scho
 - Dot: A dot-matrix / soft grid treatment with a classic retro feel; can be sharpened for a cleaner PSP-like look.
 - LCD1x Sharp: Primarily intended for 1X scaling and a more retro/pixel-heavy appearance.
 
-- Lite versions: The mobile shader variants (`*_lite.fsh`) are lighter-weight versions of the same shaders and are designed to reduce GPU workload. They typically run better because they simplify the shader math and avoid heavier processing paths; the exact optimization approach is visible in the source code, so if you want to understand why they are faster, the code is the best reference.
+- Lite versions: The mobile shader variants (`*_lite.fsh`) are lighter-weight versions of the same shaders and are designed to reduce GPU workload. They typically run better because they simplify the shader math and avoid heavier processing paths.
+
+## Installing in PPSSPP
+
+PPSSPP supports custom shaders through its memory-stick shader folder, so this pack can be used directly inside the emulator without modifying the game files themselves.
+
+To install the shaders:
+
+1. Open PPSSPP.
+2. Go to Settings > System > Memory Stick folder - Check The location of you PSP folder
+3. Use a file explorer to open the `PSP` folder.
+4. Create a `SHADERS` folder inside it if it does not already exist.
+5. Copy all the `.fsh`, `.vsh`, and `.ini` files from this pack into `PSP/SHADERS/`.
+6. In PPSSPP while in a game open the menu and go to "Display Layout and Effects" the new shaders should appear here with the existing PPSSPP shaders.
+7. Pick an shader of your choice and enjoy!
+
+This is the standard PPSSPP custom-shader setup used by many shader packs. PPSSPP itself handles the actual shader loading, and the files just need to live in the correct folder so the emulator can detect them.
+
+PPSSPP will show the shaders in its graphics/shader selection menu, allowing you to switch between the default output and the custom variants you have placed in the `PSP/SHADERS` directory.
 
 ## Sample images
 
