@@ -40,7 +40,7 @@ PPSSPP supports custom shaders through its memory-stick shader folder, so this p
 To install the shaders:
 
 1. Open PPSSPP.
-2. Go to Settings > System > Memory Stick folder - Check The location of you PSP folder
+2. Go to Settings > System > Memory Stick folder - Check The location of your PSP folder
 3. Use a file explorer to open the `PSP` folder.
 4. Create a `SHADERS` folder inside it if it does not already exist.
 5. Copy all the `.fsh`, `.vsh`, and `.ini` files from this pack into `PSP/SHADERS/`.
